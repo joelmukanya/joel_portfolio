@@ -1,4 +1,6 @@
-
+[class *="img"] {
+    width: 5em;
+}
 
 /*
 font-family: 'Ms Madi', cursive;

@@ -14,34 +14,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&family=Square+Peg&family=Updock&family=Whisper&display=swap" rel="stylesheet">
+    <!-- Customize CSS -->
+    <link rel="stylesheet" href="./css/style.css">
     <title>Joel's Portfolio</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
+          <!-- Logo -->
           <a class="navbar-brand" href="#">
-            <img class="img-fluid w-25" src="./images/logo.png" alt="Logo">
+            <img class="img-fluid" src="./images/logo.png" alt="Logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <!-- About -->
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  About
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">About Me</a></li>
+                  <li><a class="dropdown-item" href="#">Skills</a></li>
+                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                </ul>
+              </li>
+              <!-- Resume -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resume
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Education</a></li>
+                  <li><a class="dropdown-item" href="#">Experience</a></li>
+                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                </ul>
+              </li>
+              <!-- Projects -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <!-- Contacts -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Contact Me</a></li>
+                  <li><a class="dropdown-item" href="#">Via Social Media</a></li>
                 </ul>
               </li>
             </ul>
