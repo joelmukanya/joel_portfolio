@@ -18,63 +18,90 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Joel's Portfolio</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img class="img-fluid" src="./images/logo.png" alt="Logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <!-- About -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  About
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">About Me</a></li>
-                  <li><a class="dropdown-item" href="#">Skills</a></li>
-                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
-                </ul>
-              </li>
-              <!-- Resume -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Resume
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Education</a></li>
-                  <li><a class="dropdown-item" href="#">Experience</a></li>
-                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
-                </ul>
-              </li>
-              <!-- Projects -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <!-- Contacts -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Contact
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Contact Me</a></li>
-                  <li><a class="dropdown-item" href="#">Via Social Media</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+<body class=" bg-gradient">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img class="logo img-fluid" src="./images/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
+            <!-- About -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">About Me</a></li>
+                <li><a class="dropdown-item" href="#">Skills</a></li>
+                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+              </ul>
+            </li>
+            <!-- Resume -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resume
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Education</a></li>
+                <li><a class="dropdown-item" href="#">Experience</a></li>
+                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+              </ul>
+            </li>
+            <!-- Projects -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <!-- Contacts -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Contact Me</a></li>
+                <li><a class="dropdown-item" href="#">Via Social Media</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+  </nav>
+  <main class="container-fluid min-vh-100 text-white">
+    <!-- Landing Section -->
+    <section class="container vh-100 bg-dark" id="landing">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-sm-* w-50">
+          <h1>Joel Mukanya's Portfolio</h1>
+          <img class="img-fluid joel mx-aut" src="./images/joel3.jpg" alt="Joel Profile">
+          <h2>Developer, CEO and IT Lecturer</h2>
+        </div>
+      </div>
+    </section>
+    <!-- About Me -->
+    <section class="container" id="about-me">
+      <h3>About Me</h3>
+    </section>
+    <!-- Skills -->
+    <section class="bg-gradient" id="skills">
+      <h3>Skills</h3>
+    </section>
+    <!-- Testimonials -->
+    <section class="bg-gradient" id="testimonials">
+      <h3>Testimonials</h3>
+    </section>
 
+  </main>
+  <footer class="mb-auto bg-dark text-white py-5">
+    <h2>Footer</h2>
+  </footer>
 
-    <!-- Bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- script -->
-    <script src="./script/code,js"></script>
+  <!-- Bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- script -->
+  <script src="./script/code.js"></script>
 </body>
 </html>

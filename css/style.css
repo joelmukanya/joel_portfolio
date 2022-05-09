@@ -1,5 +1,15 @@
-[class *="img"] {
+/* Logo */
+[class *="logo"] {
     width: 5em;
+}
+/* joel */
+[class *="joel"] {
+    width: 20em;
+}
+/* section */
+section {
+    margin: 2em 0;
+    background: linear-gradient(60deg, rgb(79, 64, 11), rgb(55, 45, 11));
 }
 
 /*
