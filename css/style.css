@@ -52,16 +52,29 @@ font-family: 'Updock', cursive;
 font-family: 'Whisper', cursive;
 */
 /* Links */
+.navbar::after{
+    box-shadow: 2px 2px 2vw rgb(128, 125, 113),
+    2px 3px 4vw rgb(66, 61, 43);
+    border-bottom-right-radius: 10%;
+}
+
+body{
+    background-image: linear-gradient(from to, rgb(85, 67, 19),
+    rgb(75, 50, 2))!important;
+}
+
 a{
     text-decoration: none;
     transition: rotate(30deg) 1s ease-in-out;
     font-weight: 900;
+    border-bottom-left-radius: 25%;
 }
 
 a:hover{
     box-shadow: 1px 2px 4px rgb(84, 79, 59), 
     2px 3px 6px rgb(92, 88, 75) ;
     background-color: rgb(32, 25, 6);
+    border-radius: 25%;
 }
 
 /* Sub-menu */
@@ -82,8 +95,8 @@ a:hover{
 }
 /* ul */
 .wrapper .job-titles {
-    margin-left: 15px;
-    height: 90px;
+    margin: 2px 10px 0;
+    height: 85px;
     line-height: 90px;
     overflow: hidden;
 }
@@ -111,7 +124,7 @@ a:hover{
     width: 100%;
     background-color: rgba(39,43,47,255);
     border-left: 2px solid green;
-    animation: typing 3s steps(18) infinite;
+    animation: typing 2s steps(18) infinite;
 }
 /* animation slide */
 @keyframes slide {
@@ -121,19 +134,39 @@ a:hover{
 }
 /* For typing */
 @keyframes typing {
-    0%, 70% {
+    0%, 60% {
         left: 0%;
     }
     100%{
-        left: 100%;
+        left: min(120%);
     }
 }
 /* About */
-#slider {
-    /* width: 10em;
-    height: 10em; */
-    background: url("../images/joel1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/* Image slider */
+.img-slider {
+    overflow: hidden;
 }
+.img-slider figure {
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    animation: img-slider 7s infinite alternate running;
+}
+/* images */
+.img-slider figure img {
+    width: 33%;
+    height: 50vh;
+    float: left;
+}
+/* Animation */ 
+@keyframes img-slider {
+    from{
+        left: -20%;
+    }
+    to{
+       left: -160%;
+   }
+}
+
+
