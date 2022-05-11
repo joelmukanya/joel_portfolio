@@ -1,10 +1,14 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Ms+Madi&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@100&family=Square+Peg&family=Updock&family=Whisper&display=swap');
 
+/* Select all elements */
+*{
+    box-sizing: border-box;
+}
 body {
     font-family: "Roboto", 'Courier New', Courier, monospace;
+    overflow-x: hidden;
 }
-/* row */
 [class *="row" ] {
     margin: 1em 0;
 }
@@ -24,12 +28,14 @@ nav {
     border-bottom-right-radius: 30%;
     z-index: 20;
 }
+/* Navbar items */
 /* Logo */
 [class *="logo"] {
     border-bottom-left-radius: 35%;
 }
 /* landing */
 #landing {
+    scroll-margin: 1px;
     padding-bottom: 2em;
     box-shadow: 1px 1px 3vw rgba(114, 98, 51, 0.3),
     1px 2px 4px rgba(111, 107, 22, 0.4);
@@ -142,9 +148,13 @@ a:hover{
     }
 }
 /* About */
+#about-me {
+    scroll-margin: 7em;
+}
 /* Image slider */
 .img-slider {
     overflow: hidden;
+    padding-bottom: 2em;
 }
 .img-slider figure {
     position: relative;
@@ -168,5 +178,114 @@ a:hover{
        left: -160%;
    }
 }
+/*  */
+.about-me-wrapper > p {
+    box-shadow: 1px 1px 2vw rgb(128, 125, 113),
+    2px 1px 4vw rgb(71, 67, 54);
+    padding: 1em;
+    line-height: 1.5em;
+}
+/*  */
+/* media query */
+@media screen and (min-width: 993px) {
+    nav {
+        position: relative;
+    }
+    /* before */
+    nav::before{
+        content: '';
+        position: absolute;
+        width: 3em;
+        height: 3em;
+        left: 0;
+        top: 5em;
+        background-color: yellow;
+        border-radius: 50%;
+        border-top: .9em solid #000;
+        transform: rotate(280deg);
+        box-shadow: 1em 1em 20em 10em rgba(246, 255, 0, .5);
+    }
 
+    nav::after{
+        content: '';
+        position: absolute;
+        width: 3em;
+        height: 3em;
+        right: 0;
+        top: 5em;
+        background-color: yellow;
+        border-radius: 50%;
+        border-top: .9em solid #000;
+        transform: rotate(80deg);
+        box-shadow: 1em 1em 20em 10em rgba(246, 255, 0, .5);
+    }
+}
+@media screen and (max-width: 350px) {
+    .profile-row-wrapper [class *="col"] > img{
+        width: 100%;
+        
+    }
+    .wrapper {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .wrapper .text-wrapper {
+        left: 0;
+        font-size: 2em;
+    }
+    /*  */
+    .wrapper .job-titles {
+        font-size: 2em;
+    }
+    /*  */
+    .wrapper .job-titles
+    /*  */
+    .job-titles li span {
+        line-height: 40px;
+    }
+    /*  */
+    .job-titles li span::after {
+        height: 100%;
+        width: 100%;
+    }
+}
+/*  */
+@media screen and (max-width: 992px) {
+    nav {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }   
+}
+/* Up arrow */
+.up-arrow i {
+    font-size: 5em;
+    right: 0;
+    margin-right: .5em;
+    position: fixed;
+    top: 30vh;
+}
 
+/* testing */
+@media screen and (max-width: 730px) {
+    .up-arrow i {
+        content: '\f138';
+    }
+    
+}
+/* skills */
+#skills {
+    /* scroll-margin: .932em; */
+}
+/* Progress bar animation */
+#skills .progress-bar {
+    animation: progress-animated 10s alternate forwards;
+    width: 100%;
+}
+@keyframes progress-animated {
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
