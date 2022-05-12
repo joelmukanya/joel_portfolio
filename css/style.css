@@ -235,6 +235,7 @@ nav i {
     margin-right: .5em;
     position: fixed;
     top: 30vh;
+    z-index: 50;
 }
 
 /* testing */
@@ -273,4 +274,27 @@ nav i {
 
 #testimonials button#next {
     right: 0;
+}
+
+/* Education */
+/* Start creating a timeline */
+section .edu-col {
+    border-radius: 3em;
+}
+/* even */
+section .edu-col:nth-child(even) {
+    align-self: flex-end;
+    background-color: darkcyan;
+    border-left: 3em solid black;
+    box-shadow: 4px 3px 4px rgb(128, 125, 113),
+    4px 3px 6px rgb(71, 67, 54);
+    position: relative;
+}
+
+/* Odd */
+section .edu-col:nth-child(odd) {
+    background-color: darkolivegreen;
+    border-right: 3em solid black;
+    box-shadow: 4px 3px 4px rgb(72, 65, 33),
+    4px 3px 6px rgb(144, 126, 66);
 }
