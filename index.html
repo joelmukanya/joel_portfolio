@@ -30,45 +30,71 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#landing" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 About
+                <i class="bi bi-info-circle-fill"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#about-me">About Me</a></li>
-                <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                <li><a class="dropdown-item" href="#testimonials">Testimonials</a></li>
+                <li><a class="dropdown-item" href="#about-me">
+                  About Me
+                  <i class="bi bi-info-square-fill"></i>
+                </a></li>
+                <li><a class="dropdown-item" href="#skills">
+                  Skills
+                  <i class="bi bi-book-fill"></i>
+                </a></li>
+                <li><a class="dropdown-item" href="#testimonials">
+                  Testimonials
+                  
+                </a></li>
               </ul>
             </li>
             <!-- Resume -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#resume" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Resume
+                <i class="bi bi-clipboard-fill"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Education</a></li>
-                <li><a class="dropdown-item" href="#">Experience</a></li>
-                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                <li><a class="dropdown-item" href="#education">
+                  Education
+                  <i class="bi bi-book-half"></i>
+                </a></li>
+                <li><a class="dropdown-item" href="#experience">
+                  Experience
+                  
+                </a></li>
               </ul>
             </li>
             <!-- Projects -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">
+                Projects
+                <i class="bi bi-server"></i>
+              </a>
             </li>
             <!-- Contacts -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Contact
+                <i class="bi bi-file-person-fill"></i>
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Contact Me</a></li>
-                <li><a class="dropdown-item" href="#">Via Social Media</a></li>
+                <li><a class="dropdown-item" href="#contact-me">
+                  Contact Me
+                  <i class="bi bi-telephone-fill"></i>
+                </a></li>
+                <li><a class="dropdown-item" href="social-media">
+                  Via Social Media
+                  <i class="bi bi-globe"></i>
+                </a></li>
               </ul>
             </li>
-          </ul>
+          </ul>        
         </div>
       </div>
   </nav>
   <main class="container-fluid bg-secondary text-white">
     <!-- Landing Section -->
-    <section class="container min-vh-100 bg-dark bg-gradient " id="landing">
+    <section class="container min-vh-100 bg-dark bg-gradient" id="landing">
       <div class="row d-flex flex-wrap">
         <div class="col-sm-* py-2">
           <h1 class="display-1 py-2 text-center bg-gradient">Joel Mukanya's Portfolio</h1>
@@ -82,10 +108,10 @@
       <div class="row">
         <div class="wrapper col-md bg-transparent " >
           <div class="row d-flex">
-            <div class="col-md-4 flex-row-reverse bg-secondary ">
+            <div class="col-md-4 flex-row-reverse">
               <h5 class="text-wrapper jt-title float-end">I am a </h5>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 experience">
               <ul class="job-titles list-unstyled">
                 <li><span>Software Developer</span></li>
                 <li><span>CEO and Founder</span></li>
@@ -129,7 +155,7 @@
       <i class="bi bi-arrow-up-circle-fill "></i>
     </a>
     <!-- Skills -->
-    <section class="container" id="skills">
+    <section class="container py-3" id="skills">
       <!-- Back to the top -->
 
       <h3 class="display-3 text-center">Skills</h3>
@@ -246,7 +272,7 @@
       </div>
     </section>
     <!-- Testimonials -->
-    <section class="container" id="testimonials">
+    <section class="container py-3" id="testimonials">
       <h3 class="display-3 text-center">Testimonials</h3>
       <div class="row">
         <div class="col bg-success position-relative">
@@ -268,9 +294,70 @@
         </div>
       </div>
     </section>
+    <!-- Educationb -->
+    <section class="container py-3" id="education">
+      <h3 class="display-3 text-center">Education</h3>
+      <div class="row">
+        <!--  -->
+      </div>
+    </section>
+    <!-- Experience -->
+    <section class="container py-3" id="experience">
+      <h3 class="display-3 text-center">Experience</h3>
+      <div class="row">
+        <!--  -->
+      </div>
+    </section>
+    <!-- Projects -->
+    <section class="container py-3" id="projects">
+        <h3 class="display-3 text-center">Projects</h3>
+        <div class="row">
+          <!--  -->
+        </div>
+    </section>
+    <!-- Contact me -->
+    <section class="container py-3" id="contact-me">
+      <h3 class="display-3 text-center">Please fill in the form</h3>
+      <div class="row">
+        <!--  -->
+      </div>
+    </section>
+    <!-- Social Media -->
+    <section class="container py-3" id="social-media">
+      <h3 class="display-3 text-center">Social Media</h3>
+      <div class="row">
+        <!--  -->
+      </div>
+    </section>
   </main>
-  <footer class="mt-auto bg-dark py-5">
-    <h2>Footer</h2>
+  <footer class="mt-auto bg-dark py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col-md-5">
+          <h2 class="display-2">Copyright</h2>
+          <p class="lead">Copyright &copy; <span id="currentYear"></span></p>  
+        </div>
+        <div class="col-sm-7 col-md-7">
+          <h2 class="display-2">Menu</h2>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a href="#about-me" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#resume" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-me" class="nav-link">Contacts</a>
+            </li>
+  
+          </ul>
+        </div>
+  
+      </div>
+    </div>
   </footer>
 
   <!-- Bootstrap script -->

@@ -3,6 +3,7 @@
 /* Select all elements */
 *{
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 /* body */
 body {
@@ -37,10 +38,6 @@ nav {
     box-shadow: 1px 1px 3vw rgba(114, 98, 51, 0.3),
     1px 2px 4px rgba(111, 107, 22, 0.4);
 }
-/* I am a */
-.jt-title {
-
-}
 /* section */
 section  {
     margin: 2em 0;
@@ -59,21 +56,25 @@ section:not(:first-child) {
     border-bottom-right-radius: 10%;
 }
 /* styling all anchor tags */
-a{
+nav a{
     text-decoration: none;
     transition: rotate(30deg) 1s ease-in-out;
     font-weight: 900;
     border-bottom-left-radius: 25%;
 }
 /* On mouse hover */
-a:hover{
+nav a:hover{
     box-shadow: 1px 2px 4px rgb(84, 79, 59), 
     2px 3px 6px rgb(92, 88, 75) ;
     background-color: rgb(32, 25, 6);
     border-radius: 25%;
 }
+nav i {
+    font-size: 1.2em;
+}
 /* Sub-menu */
-[class *="dropdown-menu"], [class *="dropdown-menu"] a {
+[class *="dropdown-menu"], [class *="dropdown-menu"] a,
+[class *="dropdown-menu"] a:hover {
     background-color: rgb(48, 51, 51);
     color: white;
 }
@@ -84,7 +85,6 @@ a:hover{
     3px 4px 8px rgb(71, 67, 54) ;
 }
 /* Typing - animation */
-
 .wrapper .text-wrapper {
     font-size: 60px;
     font-weight: 400;
@@ -220,9 +220,11 @@ a:hover{
     }   
     .wrapper .row {
         flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
     }
     /* col */
-    .wrapper [class *=".col"] {
+    .wrapper .experience {
         width: 100%;
     }
 }
