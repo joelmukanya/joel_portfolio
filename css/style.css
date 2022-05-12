@@ -1,14 +1,17 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Ms+Madi&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@100&family=Square+Peg&family=Updock&family=Whisper&display=swap');
-
 /* Select all elements */
 *{
     box-sizing: border-box;
 }
+/* body */
 body {
     font-family: "Roboto", 'Courier New', Courier, monospace;
     overflow-x: hidden;
+    background-image: linear-gradient(from to, rgb(85, 67, 19),
+    rgb(75, 50, 2))!important;
 }
+/*  */
 [class *="row" ] {
     margin: 1em 0;
 }
@@ -16,16 +19,10 @@ body {
 [class *="logo"] {
     width: 5em;
 }
-/* joel */
-[class *="joel"] {
-    width: 20em;
-}
 /* nav */
 nav {
     box-shadow: 2px 1px 3px rgba(124, 127, 61,.3),
     2px 2px 4px rgba(71, 66, 10,.5);
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
     z-index: 20;
 }
 /* Navbar items */
@@ -40,6 +37,10 @@ nav {
     box-shadow: 1px 1px 3vw rgba(114, 98, 51, 0.3),
     1px 2px 4px rgba(111, 107, 22, 0.4);
 }
+/* I am a */
+.jt-title {
+
+}
 /* section */
 section  {
     margin: 2em 0;
@@ -51,50 +52,39 @@ section  {
 section:not(:first-child) {
     background: linear-gradient(60deg, rgb(79, 64, 11), rgb(55, 45, 11));
 }
-/*
-font-family: 'Ms Madi', cursive;
-font-family: 'Square Peg', cursive;
-font-family: 'Updock', cursive;
-font-family: 'Whisper', cursive;
-*/
 /* Links */
 .navbar::after{
     box-shadow: 2px 2px 2vw rgb(128, 125, 113),
     2px 3px 4vw rgb(66, 61, 43);
     border-bottom-right-radius: 10%;
 }
-
-body{
-    background-image: linear-gradient(from to, rgb(85, 67, 19),
-    rgb(75, 50, 2))!important;
-}
-
+/* styling all anchor tags */
 a{
     text-decoration: none;
     transition: rotate(30deg) 1s ease-in-out;
     font-weight: 900;
     border-bottom-left-radius: 25%;
 }
-
+/* On mouse hover */
 a:hover{
     box-shadow: 1px 2px 4px rgb(84, 79, 59), 
     2px 3px 6px rgb(92, 88, 75) ;
     background-color: rgb(32, 25, 6);
     border-radius: 25%;
 }
-
 /* Sub-menu */
 [class *="dropdown-menu"], [class *="dropdown-menu"] a {
     background-color: rgb(48, 51, 51);
     color: white;
 }
-
+/*  */
 [class *="dropdown-menu"] a {
     box-shadow: 1px 2px 4px rgb(128, 125, 113), 
     2px 3px 6px rgb(42, 39, 33),
     3px 4px 8px rgb(71, 67, 54) ;
 }
 /* Typing - animation */
+
 .wrapper .text-wrapper {
     font-size: 60px;
     font-weight: 400;
@@ -191,35 +181,8 @@ a:hover{
     nav {
         position: relative;
     }
-    /* before */
-    nav::before{
-        content: '';
-        position: absolute;
-        width: 3em;
-        height: 3em;
-        left: 0;
-        top: 5em;
-        background-color: yellow;
-        border-radius: 50%;
-        border-top: .9em solid #000;
-        transform: rotate(280deg);
-        box-shadow: 1em 1em 20em 10em rgba(246, 255, 0, .5);
-    }
-
-    nav::after{
-        content: '';
-        position: absolute;
-        width: 3em;
-        height: 3em;
-        right: 0;
-        top: 5em;
-        background-color: yellow;
-        border-radius: 50%;
-        border-top: .9em solid #000;
-        transform: rotate(80deg);
-        box-shadow: 1em 1em 20em 10em rgba(246, 255, 0, .5);
-    }
 }
+/*  */
 @media screen and (max-width: 350px) {
     .profile-row-wrapper [class *="col"] > img{
         width: 100%;
@@ -255,6 +218,13 @@ a:hover{
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }   
+    .wrapper .row {
+        flex-flow: column wrap;
+    }
+    /* col */
+    .wrapper [class *=".col"] {
+        width: 100%;
+    }
 }
 /* Up arrow */
 .up-arrow i {
@@ -266,21 +236,22 @@ a:hover{
 }
 
 /* testing */
-@media screen and (max-width: 730px) {
-    .up-arrow i {
-        content: '\f138';
+/* @media screen and (max-width: 800px) {
+    .up-arrow i::before {
+        content: '\F11E';
     }
     
-}
+} */
 /* skills */
-#skills {
-    /* scroll-margin: .932em; */
-}
+
 /* Progress bar animation */
-#skills .progress-bar {
-    animation: progress-animated 10s alternate forwards;
-    width: 100%;
+.progress-bar {
+    width: 100%; 
 }
+#skills:hover .progress-bar {
+    animation: progress-animated 10s alternate forwards;
+}
+/* animation */
 @keyframes progress-animated {
     from {
         width: 0;
@@ -288,4 +259,16 @@ a:hover{
     to{
         width: 100%;
     }
+}
+
+/* Testimonials */
+#testimonials button {
+    position: absolute;
+}
+#testimonials button#prev {
+    left: 0;
+}
+
+#testimonials button#next {
+    right: 0;
 }

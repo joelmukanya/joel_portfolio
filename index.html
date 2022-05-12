@@ -80,16 +80,22 @@
         </div>
       </div>
       <div class="row">
-        <div class="wrapper col-sm d-flex justify-content-center align-items-center" >
-          <div class="text-wrapper">I am a </div>
-          <ul class="job-titles list-unstyled">
-            <li><span>Software Developer</span></li>
-            <li><span>CEO and Founder</span></li>
-            <li><span>IT Lecturer</span></li>
-            <li><span>Youtuber</span></li>
-            <li><span>Web Designer</span></li>
-            <li><span>Database Developer</span></li>
-          </ul>
+        <div class="wrapper col-md bg-transparent " >
+          <div class="row d-flex">
+            <div class="col-md-4 flex-row-reverse bg-secondary ">
+              <h5 class="text-wrapper jt-title float-end">I am a </h5>
+            </div>
+            <div class="col-md-8">
+              <ul class="job-titles list-unstyled">
+                <li><span>Software Developer</span></li>
+                <li><span>CEO and Founder</span></li>
+                <li><span>IT Lecturer</span></li>
+                <li><span>Youtuber</span></li>
+                <li><span>Web Designer</span></li>
+                <li><span>Database Developer</span></li>
+              </ul>    
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -168,9 +174,21 @@
               </div>
             </div>
           </div>
-
+          <!-- row 4 -->
+          <div class="row d-flex flex-column">
+            <div class="col">
+              <h6 class="display-6">
+                Self-development
+              </h6>
+            </div>
+            <div class="col">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md">
+        <div class="left-border col-md">
           <!-- row 1 -->
           <div class="row d-flex flex-column">
             <div class="col">
@@ -229,7 +247,26 @@
     </section>
     <!-- Testimonials -->
     <section class="container" id="testimonials">
-      <h3>Testimonials</h3>
+      <h3 class="display-3 text-center">Testimonials</h3>
+      <div class="row">
+        <div class="col bg-success position-relative">
+          <button id="prev" class="btn btn-outline-primary h-100">
+            <span ><i class="bi bi-caret-left-square"></i></span>
+          </button>
+          <button id="next" class="btn btn-outline-primary h-100">
+            <span>
+              <i class="bi bi-caret-right-square"></i>
+            </span>
+          </button>
+          <div id="carousel-testimonials" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="card-slider">
+                <div class="card-group">
+                  
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="mt-auto bg-dark py-5">
