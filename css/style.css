@@ -3,7 +3,6 @@
 /* Select all elements */
 *{
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 /* body */
 body {
@@ -188,10 +187,12 @@ nav i {
         width: 100%;
         
     }
+    /*  */
     .wrapper {
         display: flex;
         flex-flow: column wrap;
     }
+    /*  */
     .wrapper .text-wrapper {
         left: 0;
         font-size: 2em;
@@ -200,8 +201,6 @@ nav i {
     .wrapper .job-titles {
         font-size: 2em;
     }
-    /*  */
-    .wrapper .job-titles
     /*  */
     .job-titles li span {
         line-height: 40px;
