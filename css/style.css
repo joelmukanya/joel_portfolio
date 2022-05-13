@@ -276,6 +276,9 @@ nav i {
 }
 
 /* Education */
+section#education {
+    scroll-margin: 8em;
+}
 /* Start creating a timeline */
 section .edu-col {
     border-radius: 3em;
@@ -298,7 +301,23 @@ section .edu-col:nth-child(odd) {
     4px 3px 6px rgb(144, 126, 66);
 }
 
+/* Experience */
+section#experience {
+    scroll-margin: 7em;
+}
 /* Prjects */
+section#projects {
+    scroll-margin: 8em;
+}
 section#projects .card > img {
     height: 10em;
+}
+
+/* Contact */
+section#contact-me {
+    scroll-margin: 8em;
+}
+/* SOcial media */
+section#social-media {
+    scroll-margin: 8em;
 }
