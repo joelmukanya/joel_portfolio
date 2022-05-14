@@ -1,6 +1,10 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Ms+Madi&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@100&family=Square+Peg&family=Updock&family=Whisper&display=swap');
 /* Select all elements */
+html {
+    scroll-behavior: smooth;
+}
+/*  */
 *{
     box-sizing: border-box;
 }
@@ -44,6 +48,11 @@ section  {
     2px 1px 4vw rgb(71, 67, 54);
     border-radius: 5%;
 }
+/*  */
+/* section #joel-profile { */
+    /* transition: transform .5s ease-in-out infinite; */
+    /* transform: skew(11deg, 15deg) translate(-6px, 2px) rotate3d(1, -1, -2, -.2rad);
+} */
 /* Ignore the first section */
 section:not(:first-child) {
     background: linear-gradient(60deg, rgb(79, 64, 11), rgb(55, 45, 11));
@@ -250,7 +259,7 @@ nav i {
 .progress-bar {
     width: 100%; 
 }
-#skills:hover .progress-bar {
+#skills:hover .progress-bar, #skills:active .progress-bar {
     animation: progress-animated 10s alternate forwards;
 }
 /* animation */
@@ -317,7 +326,31 @@ section#projects .card > img {
 section#contact-me {
     scroll-margin: 8em;
 }
-/* SOcial media */
+/* Apply a background-color to all my form input elements */
+section#contact-me form input:not(.btn), 
+section#contact-me form textarea {
+    background-color: rgb(12, 11, 11);
+    color: white;
+}
+/* box-shadow on a form */
+section#contact-me form {
+    box-shadow: 2px 3px 2em rgb(128, 125, 113),
+    2px 3px 4em rgb(66, 61, 43);
+}
+
+section#contact-me form  {
+    transform: translateY() 1s;
+}
+/* Social media */
 section#social-media {
     scroll-margin: 8em;
 }
+/*  */
+section#social-media .card-body {
+    text-align: center;
+}
+/* hover */
+section#social-media .card-body a:hover {
+    transform: translate3d(1px, 1px, 2em) rotate3d(2, -1, -1, -0.2turn);
+}
+
