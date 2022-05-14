@@ -41,6 +41,7 @@ nav {
     box-shadow: 1px 1px 3vw rgba(114, 98, 51, 0.3),
     1px 2px 4px rgba(111, 107, 22, 0.4);
 }
+
 /* section */
 section  {
     margin: 2em 0;
@@ -193,8 +194,7 @@ nav i {
 /*  */
 @media screen and (max-width: 350px) {
     .profile-row-wrapper [class *="col"] > img{
-        width: 100%;
-        
+        width: 100%;      
     }
     /*  */
     .wrapper {
@@ -205,19 +205,6 @@ nav i {
     .wrapper .text-wrapper {
         left: 0;
         font-size: 2em;
-    }
-    /*  */
-    .wrapper .job-titles {
-        font-size: 2em;
-    }
-    /*  */
-    .job-titles li span {
-        line-height: 40px;
-    }
-    /*  */
-    .job-titles li span::after {
-        height: 100%;
-        width: 100%;
     }
 }
 /*  */
@@ -271,19 +258,11 @@ nav i {
         width: 100%;
     }
 }
-
 /* Testimonials */
-#testimonials button {
-    position: absolute;
+.test-names{
+    text-transform: uppercase;
+    font-weight: 600;
 }
-#testimonials button#prev {
-    left: 0;
-}
-
-#testimonials button#next {
-    right: 0;
-}
-
 /* Education */
 section#education {
     scroll-margin: 8em;
@@ -314,7 +293,7 @@ section .edu-col:nth-child(odd) {
 section#experience {
     scroll-margin: 7em;
 }
-/* Prjects */
+/* Projects */
 section#projects {
     scroll-margin: 8em;
 }
