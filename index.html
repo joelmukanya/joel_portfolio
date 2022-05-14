@@ -394,8 +394,43 @@
     <!-- Contact me -->
     <section class="container py-3" id="contact-me">
       <h3 class="display-3 text-center">Please fill in the form</h3>
-      <div class="row">
+      <div class="row d-flex justify-content-center align-items-center">
         <!--  -->
+        <div class="col-12 col-md-6">
+            <form action="https://formspree.io/f/myyoldnb"
+            method="POST">
+              <div class="row">
+                <label for="name" class="col-md-3 form-label">Name: </label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control" placeholder="Enter your name" required>
+                </div>
+                
+              </div>
+              <div class="row">
+                <label for="surname" class="col-md-3 form-label">Surname: </label>
+                <div class="col-md-9">
+                   <input type="text" class="form-control" placeholder="Enter your surname" required>
+                </div>
+              </div>
+              <div class="row">
+                <label for="email" class="col-md-3 form-label">Email: </label>
+                <div class="col-md-9">
+                  <input type="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                
+              </div>
+              <div class="row">
+                <label for="comment" class="col-md-3 form-label">COmments: </label>
+                <div class="col-md-9">
+                  <textarea name="comment" id="comment" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input class="btn btn-success" type="button" value="Submit">
+              </div>
+
+            </form>
+        </div>
       </div>
     </section>
     <!-- Social Media -->
