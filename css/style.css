@@ -1,5 +1,10 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Ms+Madi&family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@100&family=Square+Peg&family=Updock&family=Whisper&display=swap');
+/* Counter */
+:root{
+    counter-reset: percentages;
+}
+
 /* Select all elements */
 html {
     scroll-behavior: smooth;
@@ -249,12 +254,22 @@ nav i {
 #skills:hover .progress-bar, #skills:active .progress-bar {
     animation: progress-animated 10s alternate forwards;
 }
+/* To increment the value */
+#skills .progress-contents::before {
+
+}
+
+#skills .progress-contents::after {
+    content: counter(percentages)"%";
+}
+
 /* animation */
 @keyframes progress-animated {
     from {
         width: 0;
     }
     to{
+        counter-increment: percentages;
         width: 100%;
     }
 }
