@@ -249,22 +249,14 @@ nav i {
 
 /* Progress bar animation */
 .progress-bar {
-    width: 100%; 
+    width: 0;
 }
 #skills:hover .progress-bar, #skills:active .progress-bar {
-    animation: progress-animated 10s alternate forwards;
-}
-/* To increment the value */
-#skills .progress-contents::before {
-
-}
-
-#skills .progress-contents::after {
-    content: counter(percentages)"%";
+    animation: progress-animation 10s alternate forwards;
 }
 
 /* animation */
-@keyframes progress-animated {
+@keyframes progress-animation {
     from {
         width: 0;
     }
@@ -277,6 +269,10 @@ nav i {
 .test-names{
     text-transform: uppercase;
     font-weight: 600;
+}
+
+#testimonials .carousel-item img {
+    object-fit: cover;
 }
 /* Education */
 section#education {
