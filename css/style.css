@@ -98,59 +98,34 @@ nav i {
     2px 3px 6px rgb(42, 39, 33),
     3px 4px 8px rgb(71, 67, 54) ;
 }
-/* Typing - animation */
-.wrapper .text-wrapper {
-    font-size: 60px;
-    font-weight: 400;
+/* Typing animation */
+.typing-wrapper {
+    display: flex
 }
-/* ul */
-.wrapper .job-titles {
-    margin: 2px 10px 0;
-    height: 85px;
-    line-height: 90px;
-    overflow: hidden;
-}
-/* li */
-.job-titles li{
-    color: aqua;
-    font-size: 60px;
-    font-weight: 500;
+/* h2.typing */
+.typing {
+    margin-left: .2em;
     position: relative;
-    top: 0;
-    animation: slide 12s steps(4) infinite;
 }
-/* span */
-.job-titles li span {
-    position: relative;
-    margin: 5px 0;
-    line-height: 90px;
-}
-/* span::after */
-.job-titles li span::after {
-    content: "";
+.typing::after {
+    content: '';
     position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(39,43,47,255);
-    border-left: 2px solid green;
-    animation: typing 2s steps(18) infinite;
+    width: 1px;
+    height: 90%;
+    border-right: 1px solid green;
+    background-color: rgb(103, 119, 119);
+    animation: typing-animation 1s infinite;
 }
-/* animation slide */
-@keyframes slide {
-    100%{
-        top: -360px
+/* typing - animation */
+@keyframes typing-animation {
+    0%{
+        opacity: 0;
+    }   
+    100% {
+        opacity: 1;
     }
 }
-/* For typing */
-@keyframes typing {
-    0%, 60% {
-        left: 0%;
-    }
-    100%{
-        left: min(120%);
-    }
-}
+
 /* About */
 #about-me {
     scroll-margin: 7em;
@@ -343,4 +318,3 @@ section#social-media .card-body {
 section#social-media .card-body a:hover {
     transform: translate3d(1px, 1px, 2em) rotate3d(2, -1, -1, -0.2turn);
 }
-
