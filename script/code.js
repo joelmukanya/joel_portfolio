@@ -4,9 +4,9 @@ document.getElementById("currentYear").innerText = new Date().getFullYear();
 const jobTitle = ["a CEO & Founder", "an IT Lecturer", "a Software Developer","a SQL Developer", "a Web Developer"];
 // Declaring variables
 let cnt =0;
-let title = '';
+let title = "";
 let index = 0;
-let letter = '';
+let letter = "";
 
 // Updating the width of the progress bar
 updateWidth = (progress, value)=>{
@@ -22,17 +22,18 @@ funcTyping = () =>{
     if(cnt > jobTitle.length ){
         // reset cnt
         cnt = 0;
+        console.log("star over");
     }
     title = jobTitle[cnt];
-    letter = title.slice(0, ++index);
+    letter = title.length > 0 ? title.slice(0, ++index):
+    title = jobTitle[cnt];
     //
     document.querySelector('.typing').innerText = letter;
     if(letter.length == title.length) {
         cnt++;
         index = 0;
     }
-
-    setTimeout(funcTyping, 1000);
+    setTimeout(funcTyping, 200);
 }
 // Calling a function
 funcTyping();

@@ -212,16 +212,6 @@ nav i {
     top: 30vh;
     z-index: 50;
 }
-
-/* testing */
-/* @media screen and (max-width: 800px) {
-    .up-arrow i::before {
-        content: '\F11E';
-    }
-    
-} */
-/* skills */
-
 /* Progress bar animation */
 .progress-bar {
     width: 0;
@@ -229,7 +219,6 @@ nav i {
 #skills:hover .progress-bar, #skills:active .progress-bar {
     animation: progress-animation 10s alternate forwards;
 }
-
 /* animation */
 @keyframes progress-animation {
     from {
