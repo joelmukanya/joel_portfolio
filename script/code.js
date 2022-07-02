@@ -49,12 +49,14 @@ let profile_urls = [
 
 (function loadImage() {
     let imgContainer = 
-    document.querySelector('.img-container');
+    document.querySelector('.carousel-inner');
     imgContainer.innerHTML = '';
     // Loop through an array
     profile_urls.forEach( (item)=> {
         imgContainer.innerHTML += `
-        <img class='img-fluid' src='${item}' alt='Profile' >" 
+        <div class="carousel-item active">
+            <img src='${item}' class="d-block w-100" alt="Profile">
+        </div>
     `;
     });
 })();
