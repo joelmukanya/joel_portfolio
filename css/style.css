@@ -170,6 +170,9 @@ nav i {
     nav {
         position: relative;
     }
+    .img-slider figure img{
+        width: 50%;
+    }
 }
 /*  */
 @media screen and (max-width: 350px) {
