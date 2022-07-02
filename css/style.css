@@ -184,7 +184,8 @@ nav i {
 .progress-bar {
     width: 0;
 }
-#skills:hover .progress-bar, #skills:active .progress-bar {
+/* Start animation */
+.prgAnimation{
     animation: progress-animation 10s alternate forwards;
 }
 /* animation */

@@ -18,7 +18,7 @@ updateWidth = (progress, value)=>{
     progress.querySelector(".progress-contents").textContent = '${value}%';
 }
 //
-funcTyping = () =>{
+let funcTyping = () =>{
     if(cnt > jobTitle.length ){
         // reset cnt
         cnt = 0;
@@ -37,10 +37,7 @@ funcTyping = () =>{
 }
 // Calling a function
 funcTyping();
-
-// img-container
-
-
+// Profile Url
 let profile_urls = [
     'https://i.postimg.cc/W3tfwN1H/joel1.jpg',
     'https://i.postimg.cc/zD64pgWS/joel2.jpg',
@@ -52,3 +49,16 @@ let profile_urls = [
         document.querySelectorAll('.profile-imgs')[index].src = `${item}`;
     })
 })();
+// On scroll
+window.addEventListener('scroll', ()=> {
+    let skills = document.querySelector('#skills');
+    let progressBar = document.querySelector('.progress-bar');
+    let currPos = skills.getBoundingClientRect().top;
+    let innerH = window.innerHeight;
+    if(currPos < innerH) {
+        document.querySelector('.up-arrow').display= 'block';
+        progressBar.classList.add('progress-animation');
+    }else {
+        progressBar.classList.remove('progress-animation');
+    }
+});
