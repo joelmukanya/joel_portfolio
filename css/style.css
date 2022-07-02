@@ -4,7 +4,6 @@
 :root{
     counter-reset: percentages;
 }
-
 /* Select all elements */
 html {
     scroll-behavior: smooth;
@@ -23,6 +22,7 @@ body {
 /*  */
 [class *="row" ] {
     margin: 1em 0;
+    border-bottom-left-radius: 35%;
 }
 /* Logo */
 [class *="logo"] {
@@ -34,11 +34,6 @@ nav {
     2px 2px 4px rgba(71, 66, 10,.5);
     z-index: 20;
 }
-/* Navbar items */
-/* Logo */
-[class *="logo"] {
-    border-bottom-left-radius: 35%;
-}
 /* landing */
 #landing {
     scroll-margin: 1px;
@@ -46,7 +41,6 @@ nav {
     box-shadow: 1px 1px 3vw rgba(114, 98, 51, 0.3),
     1px 2px 4px rgba(111, 107, 22, 0.4);
 }
-
 /* section */
 section  {
     margin: 2em 0;
@@ -55,10 +49,6 @@ section  {
     border-radius: 5%;
 }
 /*  */
-/* section #joel-profile { */
-    /* transition: transform .5s ease-in-out infinite; */
-    /* transform: skew(11deg, 15deg) translate(-6px, 2px) rotate3d(1, -1, -2, -.2rad);
-} */
 /* Ignore the first section */
 section:not(:first-child) {
     background: linear-gradient(60deg, rgb(79, 64, 11), rgb(55, 45, 11));
@@ -83,6 +73,7 @@ nav a:hover{
     background-color: rgb(32, 25, 6);
     border-radius: 25%;
 }
+/* nav icon */
 nav i {
     font-size: 1.2em;
 }
@@ -125,38 +116,14 @@ nav i {
         opacity: 1;
     }
 }
-
 /* About */
 #about-me {
     scroll-margin: 7em;
 }
-/* Image slider */
-.img-slider {
-    overflow: hidden;
-}
-.img-slider figure {
-    position: relative;
-    width: 300%;
-    margin: 0;
-    left: 0;
-    animation: img-slider 7s infinite alternate running;
-    background-color: white;
-}
-/* images */
-.img-slider figure img {
-    float: left;
-    width: 20%;
+/* Carousel-item img */
+.carousel-item img {
+    height: 400px;
     object-fit: cover;
-    object-position: center;
-}
-/* Animation */ 
-@keyframes img-slider {
-    from{
-        left: -20%;
-    }
-    to{
-       left: -160%;
-   }
 }
 /*  */
 .about-me-wrapper > p {
@@ -170,9 +137,6 @@ nav i {
 @media screen and (min-width: 993px) {
     nav {
         position: relative;
-    }
-    .img-slider figure img{
-        width: 50%;
     }
 }
 /*  */
