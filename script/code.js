@@ -37,3 +37,25 @@ funcTyping = () =>{
 }
 // Calling a function
 funcTyping();
+
+// img-container
+
+
+let profile_urls = [
+    'https://i.postimg.cc/W3tfwN1H/joel1.jpg',
+    'https://i.postimg.cc/zD64pgWS/joel2.jpg',
+    'https://i.postimg.cc/rwL322fD/joel3.jpg'
+];
+
+(function loadImage() {
+    let imgContainer = 
+    document.querySelector('.img-container');
+    imgContainer.innerHTML = '';
+    // Loop through an array
+    profile_urls.forEach( (item)=> {
+        imgContainer.innerHTML += `
+        <img class='img-fluid' src='${item}' alt='Profile' >" 
+    `;
+    });
+})();
+
